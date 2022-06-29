@@ -1,4 +1,18 @@
 .gallery {
+  padding-top: 60px;
   min-height: 400px;
   background-color: #f7f7f7;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc((100% - 3 * 16px) / 3);
+}
+
+.pagination {
+  background-color: tomato;
 }
