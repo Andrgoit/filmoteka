@@ -4,9 +4,11 @@ const newApiService = new ApiService();
 //  == refs ==
 const refs = {
   form: document.querySelector('.search-form'),
-  gallery: document.querySelector('#gallery-list'),
-  galleryItem: document.querySelector('.gallery-item'),
+  gallery: document.querySelector('.gallery-list'),
+  // galleryItem: document.querySelector('.gallery-item'),
 };
+
+// console.log(refs.gallery);
 
 //   == listeners ==
 refs.form.addEventListener('submit', inputHandler);
@@ -25,6 +27,7 @@ async function getTrendingMovie() {
     const responseGenres = await newApiService.fetchGenres();
     console.log(response);
     markupMovies(response, responseGenres);
+    refs.gallery.addEventListener('click', galleryListListener);
   } catch (error) {
     console.log(error);
   }
@@ -32,13 +35,13 @@ async function getTrendingMovie() {
 //  == // First Load Page ==
 
 function markupMovies(response, responseGenres) {
-  console.log(response.results);
   const arrGenres = responseGenres.genres;
-  console.log(arrGenres);
-
   const imageUrl = 'https://image.tmdb.org/t/p/';
   const imageSize = 'w500';
   const movies = response.results;
+
+  console.log(response.results);
+  console.log(arrGenres);
 
   const markup = movies
     .map(
@@ -57,18 +60,16 @@ function markupMovies(response, responseGenres) {
         let year = date.getFullYear();
         let vote = vote_average.toFixed(1);
         return `<li class="gallery-item" id="${id}">
-        <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}"></div>
+        <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}">
         <h2 class="gallery-item-title">${original_title}</h2>
-        <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span>
-        <button type="button" id="watched">Watched</button>
-<button type="button" id="queue">Queue</button>
-      </li>`;
+        <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
       }
     )
     .join('');
 
   refs.gallery.innerHTML = markup;
-  addGalleryItemListener();
+
+  // addGalleryItemListener();
 }
 
 async function inputHandler(e) {
@@ -90,11 +91,14 @@ async function inputHandler(e) {
   return;
 }
 
-function addGalleryItemListener() {
-  galleryItem = document.querySelector('.gallery-item');
-  galleryItem.addEventListener('click', galleryItemListener);
-}
+// function addGalleryItemListener() {
+//   refs.gallery.addEventListener('click', galleryItemListener);
+// }
 
-function galleryItemListener(e) {
-  console.log(e);
+function galleryListListener(e) {
+  console.dir(e.target);
+  e.preventDefault();
+  const target = e.target;
+  const IdElement = target.closest('.gallery-item');
+  console.dir('IdElement', IdElement);
 }
