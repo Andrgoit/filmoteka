@@ -59,7 +59,7 @@ function markupMovies(response, responseGenres) {
         let date = new Date(release_date);
         let year = date.getFullYear();
         let vote = vote_average.toFixed(1);
-        return `<li class="gallery-item" id="${id}">
+        return `<li class="gallery-item" data-id="${id}">
         <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}">
         <h2 class="gallery-item-title">${original_title}</h2>
         <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
@@ -99,6 +99,6 @@ function galleryListListener(e) {
   console.dir(e.target);
   e.preventDefault();
   const target = e.target;
-  const IdElement = target.closest('.gallery-item');
-  console.dir('IdElement', IdElement);
+  const idElement = target.closest('.gallery-item').dataset;
+  console.dir('IdElement', idElement);
 }
