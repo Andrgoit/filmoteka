@@ -260,3 +260,40 @@ function addQueueToLocalStorage() {
     console.log('localStorage parsing error');
   }
 }
+
+function readWatchedFromStorage() {
+  const watchedFromStorage = localStorage.getItem('watched');
+  try {
+    const savedWatched = JSON.parse(watchedFromStorage);
+    markupSavedMovie(savedWatched);
+  } catch (error) {
+    console.log('error readWatchedFromStorage');
+  }
+}
+
+function readQueueFromStorage() {
+  const watchedFromStorage = localStorage.getItem('queue');
+  try {
+    const savedWatched = JSON.parse(watchedFromStorage);
+    markupSavedMovie(savedWatched);
+  } catch (error) {
+    console.log('error readQueueFromStorage');
+  }
+}
+
+function markupSavedMovie(savedWatched) {
+  const imageUrl = 'https://image.tmdb.org/t/p/';
+  const imageSize = 'w500';
+
+  const markup = savedWatched
+    .map(({ genres, original_title, poster_path, vote_average }) => {
+      let genresArray = genres.map(genre => genre.name);
+      let vote = vote_average.toFixed(1);
+
+      return `<li class="gallery-item" data-id="${id}">
+        <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}">
+        <h2 class="gallery-item-title">${original_title}</h2>
+        <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
+    })
+    .join('');
+}
