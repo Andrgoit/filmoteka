@@ -4,6 +4,8 @@ export default class ApiService {
   constructor() {
     this.searchValue = '';
     this.page = 1;
+    this.idMovie = '';
+    this.objForLocalStorage = {};
   }
 
   async fetchTrendingUrl() {
@@ -35,10 +37,11 @@ export default class ApiService {
     // console.log('fetchGenres', response);
     return await response.json();
   }
-  // id подставлен статически временно
+
+  // id подставлен статически временно 453395
   async fetchMovieById() {
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/157336?api_key=${API_KEY}`
+      `https://api.themoviedb.org/3/movie/${this.idMovie}?api_key=${API_KEY}`
     );
     return await response.json();
   }
@@ -54,5 +57,20 @@ export default class ApiService {
   }
   set input(newSearchValue) {
     this.searchValue = newSearchValue;
+  }
+
+  get id() {
+    return this.idMovie;
+  }
+
+  set id(newIdMovie) {
+    this.idMovie = newIdMovie;
+  }
+
+  get obj() {
+    return this.objForLocalStorage;
+  }
+  set obj(newObj) {
+    this.objForLocalStorage = newObj;
   }
 }
