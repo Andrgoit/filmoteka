@@ -82,7 +82,7 @@
 68D:\Documents\GoIt\Projects\filmoteka\node_modules\json5\lib\parse.js121436361000000000 0
 77D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\transformer-raw\lib133008064334622598 1
 66D:\Documents\GoIt\Projects\filmoteka\node_modules\posthtml-include133008064331865645 1
-41D:\Documents\GoIt\Projects\filmoteka\dist133015965142257096 1
+41D:\Documents\GoIt\Projects\filmoteka\dist133016147978856791 1
 72D:\Documents\GoIt\Projects\filmoteka\node_modules\css-tree\lib\tokenizer133008064364564806 1
 121D:\Documents\GoIt\Projects\filmoteka\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages.cmd133008064394881914 0
 96D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\core\lib\requests\ValidationRequest.js121436361000000000 0
@@ -158,7 +158,7 @@
 87D:\Documents\GoIt\Projects\filmoteka\node_modules\terser\node_modules\commander\typings133008064351881730 1
 83D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\utils\test\config.test.js121436361000000000 0
 60D:\Documents\GoIt\Projects\filmoteka\node_modules\picocolors133008064345535286 1
-49D:\Documents\GoIt\Projects\filmoteka\src\index.js133015965137387861 0
+49D:\Documents\GoIt\Projects\filmoteka\src\index.js133016147977968129 0
 99D:\Documents\GoIt\Projects\filmoteka\node_modules\caniuse-lite\data\features\css-text-align-last.js121436361000000000 0
 99D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\transformer-svg\test\parseFuncIRI.test.js121436361000000000 0
 43D:\Documents\GoIt\Projects\filmoteka\src\js133008241645869445 1
@@ -215,7 +215,7 @@
 82D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\utils\src\http-server.js121436361000000000 0
 74D:\Documents\GoIt\Projects\filmoteka\node_modules\terser\dist\package.json121436361000000000 0
 92D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\core\test\PublicDependency.test.js121436361000000000 0
-59D:\Documents\GoIt\Projects\filmoteka\src\sass\_gallery.scss133009598059655739 0
+59D:\Documents\GoIt\Projects\filmoteka\src\sass\_gallery.scss133016146864081561 0
 86D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\source-map\dist\SourceMap.js121436361000000000 0
 54D:\Documents\GoIt\Projects\filmoteka\node_modules\@swc133008064388452234 1
 88D:\Documents\GoIt\Projects\filmoteka\node_modules\caniuse-lite\data\features\template.js121436361000000000 0
@@ -249,8 +249,8 @@
 69D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\watcher\src133008064349637745 1
 85D:\Documents\GoIt\Projects\filmoteka\node_modules\css-tree\lib\syntax\pseudo\index.js121436361000000000 0
 75D:\Documents\GoIt\Projects\filmoteka\node_modules\fclone\bench\package.json131166076590000000 0
-62D:\Documents\GoIt\Projects\filmoteka\src\partials\gallery.html133009538476458371 0
-61D:\Documents\GoIt\Projects\filmoteka\src\partials\header.html133009163019495728 0
+62D:\Documents\GoIt\Projects\filmoteka\src\partials\gallery.html133016128540440278 0
+61D:\Documents\GoIt\Projects\filmoteka\src\partials\header.html133016024010969510 0
 61D:\Documents\GoIt\Projects\filmoteka\node_modules\buffer-from133008064352350476 1
 81D:\Documents\GoIt\Projects\filmoteka\node_modules\caniuse-lite\data\regions\CA.js121436361000000000 0
 67D:\Documents\GoIt\Projects\filmoteka\node_modules\terser\PATRONS.md121436361000000000 0
@@ -1578,7 +1578,7 @@
 81D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\utils\src\collection.js121436361000000000 0
 75D:\Documents\GoIt\Projects\filmoteka\node_modules\sass\sass.default.dart.js121436361000000000 0
 69D:\Documents\GoIt\Projects\filmoteka\node_modules\is-arrayish\LICENSE130849956100000000 0
-61D:\Documents\GoIt\Projects\filmoteka\dist\header.b382207e.jpg133015961355640854 0
+61D:\Documents\GoIt\Projects\filmoteka\dist\header.b382207e.jpg133016124554412697 0
 62D:\Documents\GoIt\Projects\filmoteka\node_modules\sass\sass.js121436361000000000 0
 73D:\Documents\GoIt\Projects\filmoteka\node_modules\@lezer\lr\dist\index.js121436361000000000 0
 72D:\Documents\GoIt\Projects\filmoteka\node_modules\safe-buffer\index.d.ts121436361000000000 0
@@ -2612,7 +2612,7 @@
 92D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-1.1.1133008064352021348 1
 92D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-2.0.0133008064352091164 1
 105D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-2.0.0\020-usage.md121436361000000000 0
-63D:\Documents\GoIt\Projects\filmoteka\dist\index.975ef6c8.js.map133015965142247125 0
+63D:\Documents\GoIt\Projects\filmoteka\dist\index.975ef6c8.js.map133016147978846807 0
 112D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md121436361000000000 0
 105D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\020-usage.md121436361000000000 0
 107D:\Documents\GoIt\Projects\filmoteka\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\040-presets.md121436361000000000 0
@@ -4407,7 +4407,7 @@
 73D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\fs\lib\index.js121436361000000000 0
 77D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\fs\lib\index.js.map121436361000000000 0
 77D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\events\package.json121436361000000000 0
-59D:\Documents\GoIt\Projects\filmoteka\dist\index.975ef6c8.js133015965142237145 0
+59D:\Documents\GoIt\Projects\filmoteka\dist\index.975ef6c8.js133016147978836835 0
 69D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\events\test133008064336172733 1
 82D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\events\src\Disposable.js121436361000000000 0
 78D:\Documents\GoIt\Projects\filmoteka\node_modules\@parcel\events\src\errors.js121436361000000000 0
@@ -4636,7 +4636,7 @@
 87D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\readers\async.js121436361000000000 0
 88D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\readers\common.js121436361000000000 0
 88D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\readers\reader.js121436361000000000 0
-52D:\Documents\GoIt\Projects\filmoteka\dist\index.html133015961355610941 0
+52D:\Documents\GoIt\Projects\filmoteka\dist\index.html133016128541871073 0
 88D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\readers\sync.d.ts121436361000000000 0
 86D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\readers\sync.js121436361000000000 0
 89D:\Documents\GoIt\Projects\filmoteka\node_modules\@nodelib\fs.walk\out\providers\index.js121436361000000000 0
@@ -4825,11 +4825,11 @@
 61D:\Documents\GoIt\Projects\filmoteka\node_modules\.bin\terser133008064400554400 0
 65D:\Documents\GoIt\Projects\filmoteka\node_modules\.bin\terser.cmd133008064400554400 0
 65D:\Documents\GoIt\Projects\filmoteka\node_modules\.bin\terser.ps1133008064400554400 0
-60D:\Documents\GoIt\Projects\filmoteka\dist\index.b07a87f3.css133015961355590987 0
-64D:\Documents\GoIt\Projects\filmoteka\dist\index.b07a87f3.css.map133015961355590987 0
-61D:\Documents\GoIt\Projects\filmoteka\dist\library.dc13386b.js133015961355630886 0
-65D:\Documents\GoIt\Projects\filmoteka\dist\library.dc13386b.js.map133015961355640854 0
-54D:\Documents\GoIt\Projects\filmoteka\dist\library.html133015961355590987 0
+60D:\Documents\GoIt\Projects\filmoteka\dist\index.b07a87f3.css133016146865218091 0
+64D:\Documents\GoIt\Projects\filmoteka\dist\index.b07a87f3.css.map133016146865218091 0
+61D:\Documents\GoIt\Projects\filmoteka\dist\library.dc13386b.js133016124554622137 0
+65D:\Documents\GoIt\Projects\filmoteka\dist\library.dc13386b.js.map133016124554800438 0
+54D:\Documents\GoIt\Projects\filmoteka\dist\library.html133016124554850302 0
 69D:\Documents\GoIt\Projects\filmoteka\assets\actions-config-step-1.png133008053425535984 0
 69D:\Documents\GoIt\Projects\filmoteka\assets\actions-config-step-2.png133008053425800904 0
 60D:\Documents\GoIt\Projects\filmoteka\assets\how-it-works.png133008053425990391 0

@@ -4,9 +4,14 @@ const newApiService = new ApiService();
 //  == refs ==
 const refs = {
   form: document.querySelector('.search-form'),
-  gallery: document.querySelector('.gallery-list'),
+  gallery: document.querySelector('.gallery-home-list'),
   modalWindow: document.querySelector('.backdrop'),
+  w: document.querySelector('[data-action="w"]'),
+  q: document.querySelector('[data-action="q"]'),
 };
+
+refs.w.addEventListener('click', readWatchedFromStorage);
+refs.q.addEventListener('click', readQueueFromStorage);
 
 // console.log(refs.modalWindow);
 
@@ -58,11 +63,30 @@ function markupMovies(response, responseGenres) {
           .map(genre => genre.name);
         let date = new Date(release_date);
         let year = date.getFullYear();
-        let vote = vote_average.toFixed(1);
+        // let vote = vote_average.toFixed(1);
+        // return `<li class="gallery-item" data-id="${id}">
+        // <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}">
+        // <h2 class="gallery-item-title">${original_title}</h2>
+        // <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
         return `<li class="gallery-item" data-id="${id}">
-        <div class="gallery-image"><img src="${imageUrl}${imageSize}${poster_path}" alt="${original_title}">
-        <h2 class="gallery-item-title">${original_title}</h2>
-        <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
+  <a class="gallery__link" href="">
+    <div class="film-card">
+      <img
+        src="${imageUrl}${imageSize}${poster_path}"
+        alt="${original_title}"
+        loading="lazy"
+        class="film-card__image"
+      />
+      <div class="card">
+        <p class="card__name">${original_title}</p>
+        <div class="card__text">
+          <p class="card__genre">${genresArray}</p>
+          <p class="card__year">${year}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</li>`;
       }
     )
     .join('');
@@ -73,7 +97,7 @@ function markupMovies(response, responseGenres) {
 }
 
 async function inputHandler(e) {
-  e.preventDefault();
+  // e.preventDefault();
   refs.gallery.innerHTML = '';
   newApiService.input = e.currentTarget.elements.searchInput.value.trim();
   // console.log(newApiService.input);
@@ -115,7 +139,7 @@ async function getMovieById() {
 
 function markupModalWindowByMovie(response) {
   newApiService.obj = response;
-  console.log(newApiService.obj);
+  // console.log(newApiService.obj);
   const imageUrl = 'https://image.tmdb.org/t/p/';
   const imageSize = 'w500';
   const {
@@ -242,6 +266,7 @@ function addWatchedToLocalStorage() {
     const list = watchedFromStorage ? JSON.parse(watchedFromStorage) : [];
     list.push(newApiService.obj);
     const updateList = JSON.stringify(list);
+    console.log(updateList);
     localStorage.setItem('watched', updateList);
   } catch (error) {
     console.log('localStorage parsing error');
@@ -262,9 +287,11 @@ function addQueueToLocalStorage() {
 }
 
 function readWatchedFromStorage() {
+  refs.gallery.innerHTML = '';
   const watchedFromStorage = localStorage.getItem('watched');
   try {
     const savedWatched = JSON.parse(watchedFromStorage);
+    console.log(savedWatched);
     markupSavedMovie(savedWatched);
   } catch (error) {
     console.log('error readWatchedFromStorage');
@@ -272,6 +299,7 @@ function readWatchedFromStorage() {
 }
 
 function readQueueFromStorage() {
+  refs.gallery.innerHTML = '';
   const watchedFromStorage = localStorage.getItem('queue');
   try {
     const savedWatched = JSON.parse(watchedFromStorage);
@@ -296,4 +324,6 @@ function markupSavedMovie(savedWatched) {
         <span class="gallery-item-prop">${genresArray} | ${year} | ${vote}</span></div></li>`;
     })
     .join('');
+  console.log('markup', markup);
+  refs.gallery.innerHTML = markup;
 }
